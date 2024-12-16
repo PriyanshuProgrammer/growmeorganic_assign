@@ -56,7 +56,6 @@ function App() {
     // removing the empty object from the last
     let oldarr = customers
     oldarr.pop()
-    setCustomers(customers => [...oldarr])
 
     let morerows: any = []
     data.data.forEach(function (row: any) {
@@ -73,7 +72,7 @@ function App() {
     })
     // adding an empty object at the last
     morerows.push({})
-    setCustomers(customers => [...customers, ...morerows])
+    setCustomers([...oldarr, ...morerows])
   }
 
   useEffect(function () {
