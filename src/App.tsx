@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { OverlayPanel } from 'primereact/overlaypanel';
 import { Tag } from 'primereact/tag';
 import "primereact/resources/themes/lara-light-cyan/theme.css";
